@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".PersonalActivity1"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:padding="15dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/linearLayout2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="More Clinical Data"
+                android:id="@+id/textView5"
+                android:layout_marginBottom="20dp"/>
+
+
+            <!--Past HbA1c-->
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginBottom="15dp"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="HbA1c"
+                            android:textColor="@android:color/secondary_text_light"
+                            android:id="@+id/HbA1cc"
+                            android:layout_alignParentLeft="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="phone"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/editbox_background_normal"
+                            android:ems="10"
+                            android:id="@+id/hba1cEdit"
+                            android:layout_weight="1" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--BP status-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginBottom="15dp"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="BP"
+                            android:textColor="@android:color/secondary_text_light"
+                            android:id="@+id/maritalText"
+                            android:layout_alignParentLeft="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/editbox_background_normal"
+                            android:ems="10"
+                            android:hint="---/--0"
+                            android:id="@+id/bpEdit"
+                            android:layout_weight="1" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--cough type-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Chest Pain"
+                            android:textColor="@android:color/secondary_text_light"
+                            android:layout_alignParentLeft="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <Spinner
+                            android:id="@+id/chestPaind"
+                            android:layout_width="210dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/editbox_background_normal" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginBottom="15dp"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Current Fever Pattern"
+                            android:textColor="@android:color/secondary_text_light"
+                            android:layout_alignParentLeft="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <Spinner
+                            android:id="@+id/currentFever"
+                            android:layout_width="210dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/editbox_background_normal" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--Cough Frequency-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginBottom="15dp"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Appetite Pattern"
+                            android:textColor="@android:color/secondary_text_light"
+                            android:id="@+id/appetiteText"
+                            android:layout_alignParentLeft="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <Spinner
+                            android:id="@+id/appetiteType"
+                            android:layout_width="210dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/editbox_background_normal" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout4"
+                android:layout_marginBottom="15dp"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Cough Frequency"
+                            android:id="@+id/coughFrequencyText"
+                            android:textColor="@android:color/secondary_text_light"
+                            android:layout_alignParentLeft="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="phone"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/editbox_background_normal"
+                            android:ems="10"
+                            android:id="@+id/coughFrequencyEdit"
+                            android:layout_weight="1" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--cough type-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginBottom="15dp"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Cough Type"
+                            android:textColor="@android:color/secondary_text_light"
+                            android:id="@+id/coughTypeText"
+                            android:layout_alignParentLeft="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <Spinner
+                            android:id="@+id/coughType"
+                            android:layout_width="210dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/editbox_background_normal" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--Other Cough-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Other Cough"
+                            android:textColor="@android:color/secondary_text_light"
+                            android:id="@+id/othercoughTypeText"
+                            android:layout_alignParentLeft="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <Spinner
+                            android:id="@+id/othercough"
+                            android:layout_width="210dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/editbox_background_normal" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--Travelling frequeryncy status-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginBottom="15dp"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Travelling Frequency"
+                            android:textColor="@android:color/secondary_text_light"
+                            android:id="@+id/traveingText"
+                            android:layout_alignParentLeft="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <Spinner
+                            android:id="@+id/spinner1"
+                            android:layout_width="210dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/editbox_background_normal" />
+                        <!-- <EditText
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:inputType="textPersonName"
+                             android:layout_alignParentRight="true"
+                             android:background="@android:drawable/editbox_background_normal"
+                             android:ems="10"
+                             android:id="@+id/travellingEdit"
+                             android:layout_weight="1" />-->
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--Current Medications / existing EMR-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout4"
+                android:layout_marginBottom="15dp"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Current Medications"
+                            android:id="@+id/medicationText"
+                            android:textColor="@android:color/secondary_text_light"
+                            android:layout_alignParentLeft="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/editbox_background_normal"
+                            android:ems="10"
+                            android:id="@+id/medicationEdit"
+                            android:layout_weight="1" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Other Cough: "
+                    android:textColor="@android:color/secondary_text_light"
+                    android:id="@+id/hgh"
+                    android:layout_alignParentLeft="true"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/noneCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="None"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/wCheck"
+                        android:text="Whooping"/>
+                    <CheckBox
+                        android:id="@+id/bCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bronchits"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/aCheck"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Asthma"/>
+                    <CheckBox
+                        android:id="@+id/pCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="pneumonia"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <!--save button code-->
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/next"
+                android:text="Next"
+                android:onClick="voiceRecoringSrc"
+                android:layout_below="@+id/linearLayout5"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/activity_horizontal_margin"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:backgroundTint="@android:color/secondary_text_dark_nodisable"
+                android:layout_marginTop="22dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
